@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "next-themes": "^0.3.0"
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.11",
+    "next-themes": "^0.3.0",
+    "tailwind-merge": "^2.3.0"
   }
 }
