@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
        
       {/*<Nav Section  />*/}
       {/*<Hero Section />*/}
+      <Hero/>
       {/*<Section      />*/} 
       {/*<Section      />*/}
       {/*<Section      />*/}
