@@ -6,7 +6,7 @@ import { Barlow } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const barlow = Barlow({ subsets: ["latin"], weight:["100","200","300","400","500","600","700","800","900",],
-  variable:"--font-barlow"
+  
  });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.variable}>
+      <body className={barlow.className}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
