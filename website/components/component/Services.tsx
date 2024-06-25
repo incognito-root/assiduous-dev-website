@@ -1,4 +1,6 @@
 import React from 'react'
+import { HiPaintBrush,HiPuzzlePiece } from 'react-icons/hi2'
+import { MdManageAccounts } from 'react-icons/md'
 
 const Services = () => {
   return (
@@ -13,8 +15,14 @@ const Services = () => {
   </div>
   <div className="sm:flex sm:flex-row ">
     <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
-      <img src="" alt="" />
+      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
+
+        
+        <HiPaintBrush color="#9EFF00" fontSize= "1.75rem"/>
+        
+        
+      </div>
+      
       <div className=" sm:h-[350px] h-[300px]">
       <h3 className="mb-2 text-xl font-semibold text-white">Design</h3>
       <p className="text-[#e6e6e6b6] ">At AssiduousDev, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.</p>
@@ -24,7 +32,9 @@ const Services = () => {
     </div>
 
     <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
+      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
+      <HiPuzzlePiece color="#9EFF00" fontSize= "1.75rem"/>
+      </div>
       
       <div className=" sm:h-[350px] h-[300px]">
         <h3 className="mb-2 text-xl font-semibold text-white">Development</h3>
@@ -35,7 +45,9 @@ const Services = () => {
     </div>
 
     <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
+      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
+      <MdManageAccounts color="#9EFF00" fontSize= "1.9rem"/>
+      </div>
       
       <div className=" sm:h-[350px] h-[300px]">
         <h3 className="mb-2 text-xl font-semibold text-white">Project Management</h3>
