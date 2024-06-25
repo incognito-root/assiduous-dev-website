@@ -12,7 +12,7 @@ const Services = () => {
      </div>
   </div>
   <div className="sm:flex sm:flex-row ">
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] w-[2000px]">
+    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
       <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
       <img src="" alt="" />
       <div className=" sm:h-[350px] h-[300px]">
@@ -23,7 +23,7 @@ const Services = () => {
       <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">Learn More</button>
     </div>
 
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] w-[2000px]">
+    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
       <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
       
       <div className=" sm:h-[350px] h-[300px]">
@@ -34,7 +34,7 @@ const Services = () => {
       <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">Learn More</button>
     </div>
 
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] w-[2000px]">
+    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
       <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]"></div>
       
       <div className=" sm:h-[350px] h-[300px]">
