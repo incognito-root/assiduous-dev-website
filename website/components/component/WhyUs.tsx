@@ -1,5 +1,10 @@
+import { WhyUsItems } from '@/data'
 import React from 'react'
-import { HiPaintBrush } from 'react-icons/hi2'
+import { IoMedal } from "react-icons/io5";
+import { MdPeopleAlt } from "react-icons/md";
+import { MdEnergySavingsLeaf } from "react-icons/md";
+import { FaCrown } from "react-icons/fa";
+
 
 const WhyUs = () => {
   return (
@@ -15,70 +20,35 @@ const WhyUs = () => {
 
         <div className="sm:grid sm:grid-cols-2 sm:grid-rows-2 ">
 
-            <div className="p-10 flex flex-col gap-1 border border-[#262626] ">
+          {WhyUsItems.map(({id,title,desc,})=>(<div className="p-10 flex flex-col gap-1 border border-[#262626] ">
             <div className='flex gap-5'>
                 <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
                 <div className='flex flex-row justify-center items-center'>
-                <HiPaintBrush color="#9EFF00" fontSize="1.5em"/>
-                </div> 
-                </div> 
-                <h3 className="mt-4 text-xl font-semibold text-white">Expertise</h3>
-                </div>
-                <img src="" alt="" />
-
-                <div className="">
-                <p className="text-[#e6e6e6b6] ">Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
-
-                </div>
-               
-                </div>
-
-                <div className="p-10 flex flex-col gap-1 border border-[#262626] ">
                 
-                <div className='flex gap-5'>
-                <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
+                {
+            id===1?<IoMedal  color="#9EFF00" fontSize= "1.75rem"/>: id===2?<MdPeopleAlt color="#9EFF00" fontSize= "1.75rem"/>: id===3?<MdEnergySavingsLeaf color="#9EFF00" fontSize= "1.75rem"/>:<FaCrown color="#9EFF00" fontSize= "1.75rem"/>
+          }
+
                 </div> 
-                <h3 className="mt-4 text-xl font-semibold text-white">Expertise</h3>
+                </div> 
+                <h3 className="mt-4 text-xl font-semibold text-white">{title}</h3>
                 </div>
                 <img src="" alt="" />
 
                 <div className="">
-                <p className="text-[#e6e6e6b6] ">Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
+                <p className="text-[#e6e6e6b6] ">{desc}</p>
 
                 </div>
                
-                </div>
-
-                <div className="p-10 flex flex-col gap-1 border border-[#262626] ">
-                <div className='flex gap-5'>
-                <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
-                </div> 
-                <h3 className="mt-4 text-xl font-semibold text-white">Expertise</h3>
-                </div>
-                <img src="" alt="" />
-
-                <div className="">
-                <p className="text-[#e6e6e6b6] ">Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
-
-                </div>
+                </div>))}
+{
+            
+}
                
-                </div>
 
-                <div className="p-10 flex flex-col gap-1 border border-[#262626] ">
-                <div className='flex gap-5'>
-                <div className="mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
-                </div> 
-                <h3 className="mt-4 text-xl font-semibold text-white">Expertise</h3>
-                </div>
-                <img src="" alt="" />
+             
 
-                <div className="">
-                <p className="text-[#e6e6e6b6] ">Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
-
-                </div>
-               
-                </div>
-
+            
         </div>
 
 

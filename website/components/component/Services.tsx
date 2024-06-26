@@ -1,6 +1,8 @@
 import React from 'react'
 import { HiPaintBrush,HiPuzzlePiece } from 'react-icons/hi2'
 import { MdManageAccounts } from 'react-icons/md'
+import { ServicesItems } from '@/data'
+
 
 const Services = () => {
   return (
@@ -14,50 +16,28 @@ const Services = () => {
      </div>
   </div>
   <div className="sm:flex sm:flex-row ">
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
 
+    {ServicesItems.map(({id,title,desc,buttonText,})=>
+      (
+        <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
+        <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
+
+          {
+            id===1?<HiPaintBrush color="#9EFF00" fontSize= "1.75rem"/>: id===2?<HiPuzzlePiece color="#9EFF00" fontSize= "1.75rem"/>:<MdManageAccounts color="#9EFF00" fontSize= "1.80rem"/>
+          }
+          
+ 
+        </div>
         
-        <HiPaintBrush color="#9EFF00" fontSize= "1.75rem"/>
-        
-        
+        <div className=" sm:h-[350px] h-[300px]">
+        <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
+        <p className="text-[#e6e6e6b6] ">{desc}</p>
+  
+        </div>
+        <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">{buttonText}</button>
       </div>
-      
-      <div className=" sm:h-[350px] h-[300px]">
-      <h3 className="mb-2 text-xl font-semibold text-white">Design</h3>
-      <p className="text-[#e6e6e6b6] ">At AssiduousDev, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.</p>
+      ))}
 
-      </div>
-      <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">Learn More</button>
-    </div>
-
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
-      <HiPuzzlePiece color="#9EFF00" fontSize= "1.75rem"/>
-      </div>
-      
-      <div className=" sm:h-[350px] h-[300px]">
-        <h3 className="mb-2 text-xl font-semibold text-white">Development</h3>
-      <p className="text-[#e6e6e6b6]">Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.</p>
-      </div>
-
-      <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">Learn More</button>
-    </div>
-
-    <div className="p-10 flex flex-col gap-1 border border-[#262626] sm:w-[2000px]">
-      <div className="flex flex-row justify-center items-center mb-6 h-[68px] w-[68px] rounded-lg bg-gradient-to-b from-[#242424] to-[#242424]">
-      <MdManageAccounts color="#9EFF00" fontSize= "1.9rem"/>
-      </div>
-      
-      <div className=" sm:h-[350px] h-[300px]">
-        <h3 className="mb-2 text-xl font-semibold text-white">Project Management</h3>
-      <p className="text-[#e6e6e6b6]">Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.</p>
-
-      </div>
-
-      <button className="mt-23 rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">Learn More</button>
-      
-    </div>
   </div>
 </div>
 
