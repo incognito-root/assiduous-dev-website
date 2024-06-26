@@ -6,6 +6,7 @@ import { ServicesItems } from '@/data'
 
 const Services = () => {
   return (
+
     <div className="h-full w-full bg-[#1A1A1A]">
 
   <div className="flex flex-col justify-center items-center sm:w-full sm:h-[280px] h-[150px] px-5 bg-cover bg-center" style={{ backgroundImage: "url('Services.svg')" }}>
