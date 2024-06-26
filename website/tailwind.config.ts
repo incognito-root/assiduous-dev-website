@@ -164,6 +164,7 @@ const config = {
     },
   },
   plugins: [
+    require('@pyncz/tailwind-mask-image'),
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {

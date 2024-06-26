@@ -15,7 +15,7 @@ const Services = () => {
       <p className="text-[#E6E6E6] text-center sm:text-base text-sm">Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
      </div>
   </div>
-  <div className="sm:flex sm:flex-row ">
+  <div className="sm:flex sm:flex-row overflow-hidden ">
 
     {ServicesItems.map(({id,title,desc,buttonText,})=>
       (
@@ -29,7 +29,7 @@ const Services = () => {
  
         </div>
         
-        <div className=" sm:h-[350px] h-[300px]">
+        <div className=" sm:h-[350px] h-[300px] overflow-hidden sm:mask-linear sm:mask-dir-to-b">
         <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
         <p className="text-[#e6e6e6b6] ">{desc}</p>
   
