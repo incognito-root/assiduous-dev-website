@@ -29,7 +29,9 @@ const Services = () => {
  
         </div>
         
-        <div className=" sm:h-[350px] h-[300px] overflow-hidden sm:mask-linear sm:mask-dir-to-b">
+        <div className=" sm:h-[350px] h-[300px] overflow-hidden 
+        md:mask-linear md:mask-dir-to-b 
+        sm:mask-linear sm:mask-from-50 mask-to-[0.1]">
         <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
         <p className="text-[#e6e6e6b6] ">{desc}</p>
   
