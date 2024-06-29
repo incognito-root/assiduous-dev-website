@@ -2,7 +2,7 @@ import React from 'react'
 import { HiPaintBrush,HiPuzzlePiece } from 'react-icons/hi2'
 import { MdManageAccounts } from 'react-icons/md'
 import { ServicesItems } from '@/data'
-
+import Button from './Button'
 
 const Services = () => {
   return (
@@ -37,7 +37,8 @@ const Services = () => {
         <p className="text-[#e6e6e6b6] ">{desc}</p>
   
         </div>
-        <button className="rounded-md h-[52px] w-full font-semibold text-[#E6E6E6] bg-[#262626]">{buttonText}</button>
+        <Button id={3} width='full' text='Learn More' bgColor='[#262626]'></Button>
+        
       </div>
       ))}
 
