@@ -11,6 +11,7 @@ const Hero = () => {
   <div className ="flex h-full flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('Main.svg')" }}>
  
     <div className=" relative flex flex-col items-center justify-center gap-10">
+      
     {/* <img className=' absolute w-[100%] top-[60vh] sm:top-[43vh] md:top-[34vh] lg:top-[30vh] 2xl:top-[30vh]' src="Hero.png" alt="HeroImage" /> */}
       
       <h1 className=" z-10 text-center sm:text-5xl text-4xl sm:w-[800px] w-full font-semibold text-white">Empowering Your Vision with Assiduous Solutions</h1>
