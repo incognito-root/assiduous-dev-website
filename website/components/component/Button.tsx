@@ -1,28 +1,21 @@
-import React from "react";
+import React from 'react';
 
-const Button = ({
-  id,
-  width,
-  bgColor,
-  text,
-}: {
-  id?: number;
-  width?: string;
-  text?: string;
-  bgColor?: string;
-}) => {
-  let buttonClass = "";
+const Button = (
+  { id = 0, width = 'full', bgColor = '#242424', text = 'Button' }:
+  { id?: number; width?: string; text?: string; bgColor?: string }
+) => {
+  let buttonClass = 'z-10 h-[52px] rounded-lg ';
 
-  if (id === 1) {
-    buttonClass = `z-10 h-[52px] w-[${
-      width ? width : "113px"
-    }] rounded-lg border border-[#333333] bg-[#9EFF00] font-semibold text-black`;
-  } else if (id === 2) {
-    buttonClass = `backdrop-blur-sm z-10 h-[52px] w-${width} rounded-lg border border-[#333333] bg-[#2424245d] text-whi`;
-  } else {
-    buttonClass = `backdrop-blur-sm z-10 h-[52px] w-[${
-      width ? width : "[130px]"
-    }] rounded-lg border border-none bg-${bgColor} text-white`;
+  switch (id) {
+    case 1:
+      buttonClass += `w-[103px] border border-[#333333] bg-[#9EFF00] font-semibold text-black`;
+      break;
+    case 2:
+      buttonClass += `w-[103px] border border-[#333333] bg-[#2424245d] text-white backdrop-blur-sm`;
+      break;
+    default:
+      buttonClass += `w-full border-none bg-${bgColor} text-white backdrop-blur-sm`;
+      break;
   }
 
   return (
@@ -30,6 +23,6 @@ const Button = ({
       <button className={buttonClass}>{text}</button>
     </div>
   );
-};
+}
 
 export default Button;

@@ -20,8 +20,8 @@ const Hero = () => {
       </div>
 
       <div className="items z-10 flex justify-center gap-3">
-        <Button id={2} width='[103px]' text='Our Works'></Button>
-        <Button id={1} width='[103px]' text='Contact Us'></Button>
+        <Button id={2}  text='Our Works'></Button>
+        <Button id={1}  text='Contact Us'></Button>
       </div>
 
       

@@ -101,3 +101,33 @@ export const ClientReviewItems = [
     imagePath: "client-profile-picture-4.png",
   },
 ];
+
+
+export const FAQItems = [
+  {
+    id: 1,
+    Question:
+      "What services does Assiduous Dev provide?",
+    Answer:
+      "Assiduous Dev offers a range of services including design, development, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.",
+  },
+  {
+    id: 2,
+    Question:
+      "Do you offer ongoing support and maintenance after the project is completed?",
+    Answer:
+      "Assiduous Dev offers a range of services including design, development, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.",
+  },  {
+    id: 3,
+    Question:
+      "How can Assiduous Dev help my business?",
+    Answer:
+      "Assiduous Dev offers a range of services including design, development, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.",
+  },  {
+    id: 4,
+    Question:
+      "What industries does Assiduous Dev work with?",
+    Answer:
+      "Assiduous Dev offers a range of services including design, development, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.",
+  },
+];

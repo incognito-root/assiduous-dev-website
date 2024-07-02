@@ -34,6 +34,28 @@
 
     --radius: 0.5rem;
   }
+ 
+
+
+  /* Adjusted CSS for FAQ items */
+  .faq-item {
+    height: auto; /* Adjust as needed */
+    overflow: hidden;
+  }
+
+.hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Adjust timing as needed */
+}
+
+.hidden-content.expanded {
+  max-height: 200px; /* Adjust based on your content height */
+}
+
+
+
+
 
   .dark {
     --background: 240 10% 3.9%;

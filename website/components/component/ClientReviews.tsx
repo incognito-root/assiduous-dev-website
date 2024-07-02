@@ -34,7 +34,7 @@ const ClientReviews = () => {
           }) => (
             <div className="p-10 flex flex-col justify-between gap-5 border border-[#262626] h-full">
               <div>
-                <h1 className="text-[#D8FF99] sm:text-[28px] text-[18px] sm:h-[150px] max-sm:mb-2">
+                <h1 className="text-[#D8FF99] xl:text-[24px] sm:text-[20px] text-[18px] sm:h-[120px] max-sm:mb-2">
                   {reviewHighlight}
                 </h1>
                 <p className="text-[#E6E6E6] sm:text-[18px] text-[14px]">
@@ -43,8 +43,7 @@ const ClientReviews = () => {
               </div>
 
               <div
-                style={{ alignItems: "center" }}
-                className="flex justify-between w-full p-5 gap-2.5 border border-[#262626] rounded-lg "
+                className="flex justify-between items-center w-full p-5 gap-2.5 border border-[#262626] rounded-lg "
               >
                 <div className="flex w-full">
                   <img
@@ -53,20 +52,16 @@ const ClientReviews = () => {
                     className="w-[60px] h-[60px] rounded-lg"
                   />
 
-                  <div className="flex flex-col px-4 justify-between">
-                    <p className="sm:text-[20px] text-[16px]">{clientName}</p>
-                    <p className="text-[#E6E6E6] sm:text-[18px] text-[14px]">
+                  <div className="flex flex-col px-3 py-1 ">
+                    <p className="max-sm:text-[16px] text-[18px]">{clientName}</p>
+                    <p className="text-[#E6E6E6] text-[14px]">
                       {clientDesignation}
                     </p>
                   </div>
                 </div>
-                <div className="max-sm:hidden w-1/4">
-                  <Button
-                    id={3}
-                    width="[113px]"
-                    text="Open Website"
-                    bgColor="[#262626]"
-                  ></Button>
+                <div className="max-md:hidden w-1/4">
+                <Button id={3} width='full' text='View
+                ' bgColor='[#262626]'></Button>
                 </div>
               </div>
             </div>

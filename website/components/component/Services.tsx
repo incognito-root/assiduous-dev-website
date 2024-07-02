@@ -16,6 +16,8 @@ const Services = () => {
       <p className="text-[#E6E6E6] text-center sm:text-base text-sm">Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
      </div>
   </div>
+  {/* ----- */}
+  
   <div className="sm:flex sm:flex-row overflow-hidden ">
 
     {ServicesItems.map(({id,title,desc,buttonText,})=>

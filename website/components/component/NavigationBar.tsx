@@ -5,9 +5,14 @@ import Button from './Button';
 
 const NavigationBar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
+  const [selectedLink, setSelectedLink] = useState('');
 
   const handleClick = () => {
     setIsNavVisible(!isNavVisible);
+  };
+
+  const handleLinkClick = (link: string) => {
+    setSelectedLink(link);
   };
 
   useEffect(() => {
@@ -30,21 +35,17 @@ const NavigationBar = () => {
         style={{ transitionProperty: 'top' }}
       >
         <ul className='nav-links flex flex-col md:flex-row items-center md:gap-[3vw] gap-6'>
-          <li>
-            <a className='hover:text-[#9EFF00]' href="#">Home</a>
-          </li>
-          <li>
-            <a className='hover:text-[#9EFF00]' href="#">Services</a>
-          </li>
-          <li>
-            <a className='hover:text-[#9EFF00]' href="#">Work</a>
-          </li>
-          <li>
-            <a className='hover:text-[#9EFF00]' href="#">Process</a>
-          </li>
-          <li>
-            <a className='hover:text-[#9EFF00]' href="#">About</a>
-          </li>
+          {['Home', 'Services', 'Work', 'Process', 'About'].map(link => (
+            <li key={link}>
+              <a
+                className={`hover:text-[#9EFF00] ${selectedLink === link ? 'bg-gray-500' : ''}`}
+                href="#"
+                onClick={() => handleLinkClick(link)}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       <div className='z-[61] flex items-center gap-6'>
